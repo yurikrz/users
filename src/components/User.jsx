@@ -14,9 +14,8 @@ const User = ({userInfo, deleteUser,handleClickUpdate}) => {
       
       <div className='h-[200px] p-[20px] pt-[40px] border-b-[rgba(6,74,76,0.18)] border-b-[1px] text-center '>
         <h3 className='text-black font-bold text-xl mb-2'>{userInfo.first_name} {userInfo.last_name}</h3>
-        <ul className='text-black font-semibold text-l'>
+        <ul className='text-black font-semibold text-l mt-5'>
           <li><span className='text-[#aa076b]'>Email: </span>{userInfo.email}</li>
-          <li><span className='text-[#aa076b]'>Password: </span>{userInfo.password}</li>
           <li><span className='text-[#aa076b]'>Birthday: </span>{userInfo.birthday}</li>
         </ul>
       </div>
