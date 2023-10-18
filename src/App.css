@@ -12,14 +12,23 @@ input:is(:focus,:valid) {
 
 .swal-modal{
     width: 420px;
-    height: 320px;
+    height: auto;
     border: 1px solid rgba(6,74,76,0.18);
     border-radius: 6px;
 }
 
 .swal-icon{
-    margin: 5px auto;
+    margin: 0px auto;
+    padding-bottom: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
+
+.swal-icon:first-child {
+    margin-top: 15px;
+}
 
 .swal-icon--warning__body{
     /* height: 30px; */
@@ -32,6 +41,30 @@ input:is(:focus,:valid) {
     margin: 5px auto;
 }
 
-.swal-footer{
+.swal-title{
+    padding: 0;
     margin: 5px auto;
 }
+
+.swal-title:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.swal-footer{
+    margin: 5px auto;
+    padding-bottom: 5px;
+    padding-top: 0;
+}
+
+.swal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+
+@media (max-width: 640px) {
+    .swal-modal {
+        transform: scale(0.9);
+    }
+} 
